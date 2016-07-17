@@ -34,7 +34,7 @@ function! s:gitlab_fugitive_handler(opts, ...)
     let domains = exists('g:fugitive_gitlab_domains') ? g:fugitive_gitlab_domains : []
     let rel_path = {}
 
-    let domain_pattern = 'gitlab\.com'
+    let domain_pattern = 'gitlab\.2gis\.ru'
     for domain in domains
         let domain = escape(split(domain, '://')[-1], '.')
         let domain_path = matchstr(domain, '/')
